@@ -2,88 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body
-{
-    background: #116396;
-}
-.container-fluid
-{
-    width: 400px;
-    margin: 60px auto;
-    padding: 10px;
-}
-.inputs 
-{
-    padding: 2rem 0 2rem 0;
-    text-align: center;
-    justify-content: center;
-    background: white;
-}
-.inputs input[type="text"] 
-{
-    height: 4rem;
-    width: 20rem;
-    background: #212121;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px;
-    border: none;
-    background-color: transparent;
-    border: 2px solid #c2c2c2;
-    border-radius: 2px;
-    margin-right:4px ;
-}
-.inputs input[type="submit"] 
-{
-    height: 3rem;
-    width: 6rem;
-    background: #0a67ca;
-    font-weight: bold;
-    color: white;
-    font-size: 1rem;
-    margin-top: 20px;
-    border: none;
-    border-radius: 2px;
-}
-.display 
-{
-    text-align: center;
-    width: 400px;
-    color: #16a864;
-}
-.wrapper 
-{
-    margin: 0 9rem;
-    background-color: white;
-    height: 45vh;
-    margin: 50px auto;
-    border-radius: 2px;
+    font-family: Arial, sans-serif;
 }
 
-.wrapper h2
-{
-    padding: 5px 0;
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
     text-align: center;
-    background: #0548b5;
+    padding: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #0072ff;
     color: white;
-    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.wrapper p
-{
-    margin:20px 50px;
-    margin-right: 20px;
-    text-align: left;
-    color: #04214c;
-    font-size:23px;
+
+input[type="submit"]:hover {
+    background: #005bb5;
 }
-.wrapper h2 span
-{
-    font-size: 26px;
-    color: #9beefb;
+
+.wrapper {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
 }
-.wrapper p span
-{
-    color: #f4780d;
-    font-size: 25px;
+
+h2 {
+    font-size: 24px;
+    color: #0072ff;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+p span {
+    font-weight: bold;
+    color: #ff5733;
 }

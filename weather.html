@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="weather.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
 </head>
-
 <body>
-  <div class="container-fluid">
-    <section class="main">
-      <section class="inputs">
-        <input type="text" placeholder="Enter any city..." id="cityinput">
-        <input type="submit" value="Submit" id="add">
-        <button placeholder="submit" id="add"></button>
-      </section>
 
-      <section class="display">
-        <div class="wrapper">
-          <h2 id="cityoutput"></h2>
-          <p id="description"></p>
-          <p id="temp"></p>
-          <p id="wind"></p>
-        </div>
-      </section>
-    </section>
+    <div class="container">
+        <section class="inputs">
+            <input type="text" placeholder="Enter city name..." id="cityinput">
+            <input type="submit" value="Get Weather" id="add">
+        </section>
 
-  </div>
-  <script src="weather.js"></script>
+        <section class="display">
+            <div class="wrapper">
+                <h2 id="cityoutput">Weather Info</h2>
+                <p id="description">Sky Conditions: <span>---</span></p>
+                <p id="temp">Temperature: <span>---</span></p>
+                <p id="wind">Wind Speed: <span>---</span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="weather.js"></script>
+
 </body>
-
 </html>

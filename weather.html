@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Detector</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="weather.css">
+    <script defer src="weather.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-        <section class="inputs">
-            <input type="text" placeholder="Enter city name..." id="cityinput">
-            <input type="submit" value="Get Weather" id="add">
-        </section>
+        <h1>🌍 Weather Detector</h1>
 
-        <section class="display">
-            <div class="wrapper">
-                <h2 id="cityoutput">Weather Info</h2>
-                <p id="description">Sky Conditions: <span>---</span></p>
-                <p id="temp">Temperature: <span>---</span></p>
-                <p id="wind">Wind Speed: <span>---</span></p>
-            </div>
-        </section>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="cityinput" placeholder="Enter city name...">
+            <button id="add">🔍</button>
+        </div>
+
+        <!-- Loading Indicator -->
+        <p id="loading" class="hidden">Fetching weather data...</p>
+
+        <!-- Weather Info Card -->
+        <div class="weather-card hidden">
+            <h2 id="cityoutput"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+        </div>
     </div>
-
-    <script src="weather.js"></script>
 
 </body>
 </html>

@@ -1,1 +1,1 @@
-clikc on  https://vercel.com/iamsnehaas-projects/weather-detect to view the result
+clikc on https://weather-detect-mu.vercel.app/ to view the result
